@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+void inverterString(char *str) {
+    int i = 0;
+    int j = strlen(str) - 1;
+    char temp;
+    while (i < j) {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+        i++;
+        j--;
+    }
+}
+
+int main() {
+    char string[100]; // Tamanho máximo da string
+    printf("Digite uma string: ");
+    gets(string); // Entrada da string pelo usuário
+
+    printf("String original: %s\n", string);
+    inverterString(string); // Chamada da função para inverter a string
+    printf("String invertida: %s\n", string);
+
+    return 0;
+}
