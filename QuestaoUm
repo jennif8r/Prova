@@ -1,0 +1,17 @@
+#include <stdio.h>
+ // Questão um: 1) Observe o trecho de código abaixo:
+
+int main() {
+    int INDICE = 13;
+    int SOMA = 0;
+    int K = 0;
+
+    while (K < INDICE) {
+        K = K + 1;
+        SOMA = SOMA + K;
+    }
+
+    printf("Valor da variavel SOMA: %d\n", SOMA);
+
+    return 0;
+}
